@@ -1,0 +1,18 @@
+/* Character kit styles: faces, moods and idle motion (from Brew Empire). */
+.char .rig { animation: breathe 3.4s ease-in-out infinite; transform-origin: 0 0; animation-delay: var(--d, 0s); }
+@keyframes breathe { 50% { transform: scale(1.025, .965); } }
+.char .eyes { animation: blink 5s infinite; transform-origin: 0 -53px; }
+@keyframes blink { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.08); } }
+.char .eyes-closed, .char .mouth, .char .brow, .char .tint, .char .zzz, .char .sweat { display: none; }
+.char.m-neutral .mouth.neutral, .char.m-happy .mouth.happy, .char.m-angry .mouth.angry, .char.m-sleepy .mouth.sleepy, .char.m-worried .mouth.worried { display: block; }
+.char.m-neutral .brow.neutral, .char.m-happy .brow.happy, .char.m-angry .brow.angry, .char.m-sleepy .brow.sleepy, .char.m-worried .brow.worried { display: block; }
+.char.m-angry .tint { display: block; }
+.char.m-worried .sweat { display: block; animation: sweat 1.8s ease-in infinite; }
+@keyframes sweat { 0% { transform: translateY(-3px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(8px); opacity: 0; } }
+.char.m-sleepy .eyes { display: none; } .char.m-sleepy .eyes-closed { display: block; } .char.m-sleepy .zzz { display: block; animation: zzz 2s ease-in-out infinite; }
+@keyframes zzz { 0%, 100% { transform: translateY(0); opacity: .9; } 50% { transform: translateY(-6px); opacity: .5; } }
+.char.hop .rig { animation: hop .55s ease-out 2; }
+@keyframes hop { 0% { transform: scale(1.12, .84); } 35% { transform: translateY(-14px) scale(.92, 1.12); } 70% { transform: translateY(0) scale(1.1, .88); } 100% { transform: none; } }
+.char.shake .rig { animation: shake .1s linear 8; }
+@keyframes shake { 25% { transform: translateX(-3px) rotate(-2deg); } 75% { transform: translateX(3px) rotate(2deg); } }
+@media (prefers-reduced-motion: reduce) { .char .rig, .char .eyes, .char .sweat { animation: none !important; } }
