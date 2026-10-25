@@ -17,11 +17,7 @@
   <div id="stage"><div id="board" aria-label="Level"></div><div id="toasts"></div></div>
   <div id="crew" class="crew"></div>
   <div class="pad">
-    <div class="dpad">
-      <button class="hold" data-k="left" aria-label="Left">◀</button>
-      <div class="vert"><button class="hold" data-k="up" aria-label="Up stairs">▲</button><button class="hold" data-k="down" aria-label="Down stairs">▼</button></div>
-      <button class="hold" data-k="right" aria-label="Right">▶</button>
-    </div>
+    <div id="stick" aria-label="Move"><i id="knob"></i></div>
     <div class="btns">
       <button data-a="stab">🔪<small>Stab</small></button>
       <button data-a="shoot">🔫<small>Shoot</small></button>
@@ -32,7 +28,7 @@
       <button data-a="switch">🔁<small>Switch</small></button>
     </div>
   </div>
-  <p class="keys">Keys: A D move · W S stairs · C sneak · J stab · K shoot · L grenade · B bottle · hold E to use · Q switch</p>
+  <p class="keys">Keys: WASD / arrows move · C sneak · J stab · K shoot · L grenade · B bottle · hold E to use · Q switch</p>
   <ul id="goals" class="goals"></ul>
 </main>
 <div id="modal" class="modal hidden"><div class="card" id="card"></div></div>

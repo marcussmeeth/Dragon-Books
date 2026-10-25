@@ -11,7 +11,7 @@ npm test       # headless checks of the game logic
 | Game | Status | Premise |
 | --- | --- | --- |
 | **The Last Course** (`games/inspector`) | Playable | An Inspector-Calls style interrogation of a rich family at dinner. |
-| **Chain Reaction** (`games/action`) | Playable | Real-time side-on stealth: three veterans sneak, stab, shoot and roll grenades through a house, a street and an office tower. |
+| **Chain Reaction** (`games/action`) | Playable | Real-time top-down stealth: three veterans sneak, stab, shoot and roll grenades through a house, a street and an office tower. |
 | **Chain Reaction: Tactics** (`games/chain`) | Playable | The same mission as a turn-based puzzle. |
 
 - `shared/chars.js` + `shared/chars.css`: the character kit lifted from Brew Empire, plus a new `worried` mood.
