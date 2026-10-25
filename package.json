@@ -6,6 +6,6 @@
   "description": "A shelf of small games built from classic and modern books, with the Brew Empire character kit.",
   "scripts": {
     "start": "python3 -m http.server 8080",
-    "test": "node tests/inspector.mjs && node tests/chain.mjs"
+    "test": "node tests/inspector.mjs && node tests/chain.mjs && node tests/action.mjs"
   }
 }

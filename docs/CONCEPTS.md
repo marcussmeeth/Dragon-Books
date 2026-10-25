@@ -52,6 +52,14 @@ the mission. Terminals add to a data-siphon meter every round until the plug is 
 Three missions: The Semi (house, free a family, one laptop), Market Street (street, courier, plans, spy drone), Vantage Tower
 (office floor, three machines and the engineers). `tests/chain.mjs` proves each is winnable and losable with random playouts.
 
+**Action version (`games/action`):** the same crew and missions in real time, on a 3/4 top-down floor plan you can walk around freely
+(touch joystick or WASD). Guards run routines: they walk a route, stop and look around, and sometimes get distracted (a phone, a
+chat, a coffee). A distracted guard sees much less (blue cone), and a guard looking away is your window to creep up behind and stab
+silently. Vision cones are ray-cast, so walls, closed doors and tall furniture block them. Noise draws guards in, closed doors open
+on contact, and alert guards path-find after you and shoot back. Guns are loud except Imani's silenced pistol; Walt's bottles lure
+guards; grenades roll the way you face, bounce off walls and hurt your own crew (and fail the mission if they reach the hostages).
+`tests/action.mjs` checks every objective is reachable on foot, the vision, stealth, noise and weapon rules, and fuzzes all three maps.
+
 **Next:** a level editor, more guard types (camera, dog), a smart-speaker "AI" that reacts to noise, undo, a campaign map.
 
 ## The shelf (other candidates)

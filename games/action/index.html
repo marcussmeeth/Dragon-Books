@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chain Reaction · Dragon Books</title>
+<link rel="stylesheet" href="../../shared/chars.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hud">
+  <a class="back" href="../../index.html">← Shelf</a>
+  <div class="title" id="lname">Chain Reaction</div>
+  <div class="siphon" title="Data stolen. At 100% the mission fails">🤖 <span class="bar"><i id="siphon"></i></span> <b id="spct">0%</b></div>
+</header>
+<main>
+  <div id="stage"><div id="board" aria-label="Level"></div><div id="toasts"></div></div>
+  <div id="crew" class="crew"></div>
+  <div class="pad">
+    <div id="stick" aria-label="Move"><i id="knob"></i></div>
+    <div class="btns">
+      <button data-a="stab">🔪<small>Stab</small></button>
+      <button data-a="shoot">🔫<small>Shoot</small></button>
+      <button data-a="grenade">💣<small>Grenade</small></button>
+      <button data-a="bottle" id="bBottle">🍾<small>Bottle</small></button>
+      <button class="hold" data-k="use">✋<small>Hold: use</small></button>
+      <button data-a="crouch" id="bCrouch">🥷<small>Sneak</small></button>
+      <button data-a="switch">🔁<small>Switch</small></button>
+    </div>
+  </div>
+  <p class="keys">Keys: WASD / arrows move · C sneak · J stab · K shoot · L grenade · B bottle · hold E to use · Q switch</p>
+  <ul id="goals" class="goals"></ul>
+</main>
+<div id="modal" class="modal hidden"><div class="card" id="card"></div></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
