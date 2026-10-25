@@ -17,6 +17,9 @@ npm test       # headless checks of the game logic
 - `games/<name>/engine.js`: pure game logic, tested in Node. `main.js`: the browser UI.
 - `docs/CONCEPTS.md`: concept doc and the book shelf.
 
+## Licence
+All rights reserved. You may play the games and read the code, but not copy, modify or redistribute them without permission. See `LICENSE`.
+
 ## A note on rights
 Ideas, premises and genres are free to borrow; names, characters and text are not. The games here are original
 stories with the shape of their inspiration. Public-domain books (Sherlock Holmes, Oliver Twist, A Christmas Carol,
