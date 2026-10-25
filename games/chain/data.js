@@ -1,27 +1,25 @@
 // "Chain Reaction": three veterans vs. mercenaries hired by tech billionaires who are stealing secrets with AI.
 // Original characters and story. Rooms form a side-on cutaway; guards patrol between linked rooms.
 
-const glasses = '<g fill="none" stroke="#2b1a12" stroke-width="2"><circle cx="-9" cy="-53" r="6.400"/><circle cx="9" cy="-53" r="6.400"/><path d="M-2.600 -53 h5.200"/></g>';
-const vest = '<path d="M-14 -40 h28 v26 h-28z" fill="#2f3a2a" opacity=".85"/><path d="M-14 -30 h28" stroke="#1d2418" stroke-width="2"/>';
+import { CREW_LOOKS, TYCOON_LOOK } from '../../shared/cast.js';
 
 export const CREW = {
   dale: { name: 'Dale Brandt', role: 'Breacher', letter: 'D', color: '#e0584b', vision: 1, hp: 3,
     blurb: 'Retired major. Big, calm, loud when he needs to be. Can take down any guard, but the noise carries to the next room.',
-    look: { skin: '#e0b08a', hair: '#9a9a9a', hs: 0, top: '#4b5a3a', pants: '#2e3a46', body: vest } },
+    look: CREW_LOOKS.dale },
   imani: { name: 'Imani Reyes', role: 'Scout', letter: 'I', color: '#3fa7c4', vision: 2, hp: 3,
     blurb: 'Retired sergeant major. Sees two rooms ahead. Silent takedowns, but only on guards who haven\'t spotted anyone.',
-    look: { skin: '#8a5533', hair: '#cfcfcf', hs: 4, top: '#3b4a5a', pants: '#252a33' } },
+    look: CREW_LOOKS.imani },
   walt: { name: 'Walt Hollis', role: 'Talker', letter: 'W', color: '#e8b64c', vision: 1, hp: 3,
     blurb: 'Retired colonel. Spectacles, cardigan and absolute authority. Can bluff an unaware guard into looking the other way for two rounds.',
-    look: { skin: '#f3c08f', hair: '#f4f4f4', hs: 0, top: '#7a6a52', pants: '#3b3a46', face: glasses } },
+    look: CREW_LOOKS.walt },
 };
 export const CREW_ORDER = ['dale', 'imani', 'walt'];
 
 export const AP = 2;
 export const SPOTTED_SIPHON = 10;
 
-const tycoon = { skin: '#f3c08f', hair: '#2b1a12', hs: 0, top: '#2b4a7a', pants: '#15151d', face: '<path d="M-17 -57 h34 v7 q0 4 -4 4 h-8 q-4 0 -4 -4 v-1 h-2 v1 q0 4 -4 4 h-8 q-4 0 -4 -4z" fill="#15121c"/>', body: '<path d="M-14 -40 h28 v26 h-28z" fill="#3a5a9a"/><path d="M-14 -38 l14 8 l14 -8" stroke="#fff" stroke-width="2" fill="none"/>' };
-export const TYCOON = tycoon;
+export const TYCOON = TYCOON_LOOK;
 
 export const LEVELS = [
   {
