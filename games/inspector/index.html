@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#6e2433">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Dragon Books">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../icons/icon-192.png">
+<link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Last Course · Dragon Books</title>
 <link rel="stylesheet" href="../../shared/chars.css">
@@ -31,5 +37,6 @@
 </main>
 <div id="modal" class="modal hidden"><div class="card" id="card"></div></div>
 <script type="module" src="main.js"></script>
+<script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('../../sw.js').catch(() => {});</script>
 </body>
 </html>

@@ -21,3 +21,9 @@ npm test       # headless checks of the game logic
 Ideas, premises and genres are free to borrow; names, characters and text are not. The games here are original
 stories with the shape of their inspiration. Public-domain books (Sherlock Holmes, Oliver Twist, A Christmas Carol,
 The 39 Steps, Around the World in 80 Days) can be adapted directly.
+
+## Play on a phone
+The `Deploy web version` workflow publishes the site to GitHub Pages on every push to `main` (it runs `npm test` first).
+One-off setup: repo **Settings -> Pages -> Source: GitHub Actions**. Free accounts need a public repo for Pages.
+Then open the Pages URL on the phone and use *Share -> Add to Home Screen* (iPhone) or *Install app* (Android).
+After the first load the games work offline. If you change any game file, bump `CACHE` in `sw.js` so installed copies refresh.

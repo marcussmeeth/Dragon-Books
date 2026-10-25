@@ -1,5 +1,11 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="theme-color" content="#6e2433">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Dragon Books">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dragon Books</title>
 <style>
 body { margin: 0; font-family: "Fredoka", "Trebuchet MS", system-ui, sans-serif; background: #1a1424; color: #f4ead2; padding: 24px; }
@@ -11,4 +17,5 @@ a.book small { display: block; opacity: .75; margin-top: 6px; } .soon { backgrou
 <div class="shelf">
   <a class="book" href="games/inspector/index.html"><b>The Last Course</b><small>An Inspector-Calls style interrogation. Five diners, one dead girl, sixteen questions.</small></a>
   <a class="book" href="games/chain/index.html"><b>Chain Reaction</b><small>Three veteran soldiers vs. mercenaries in a tech billionaire's pay. House, street, office tower.</small></a>
-</div></body></html>
+</div><script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => {});</script>
+</body></html>
