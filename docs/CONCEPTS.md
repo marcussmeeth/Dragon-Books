@@ -30,7 +30,7 @@ the police have found the body), Cracks in the Glass (3-4), Closed Ranks (0-2), 
 **Next:** a second case, optional "what the family says to each other" overheard lines, sound, a daily seed,
 and a Brew Empire crossover case set in the Flagship Diner.
 
-## Game 2: Chain Reaction (concept)
+## Game 2: Chain Reaction (built: first playable)
 **Inspired by:** a Reacher-style thriller (three senior ex-soldiers, one woman, rescuing plans and innocents from
 mercenaries hired by tech billionaires who want to steal secrets with AI). Domestic houses, streets and offices.
 Premise only; all characters and plot to be original.
@@ -43,6 +43,16 @@ Premise only; all characters and plot to be original.
 - **Tone:** cartoon, no gore. Takedowns, stunned guards, comedic alarms. Mercenaries reuse the `thug` look; billionaires
   get a gilet, smartwatch and smug face.
 - **Build cost:** highest of the shelf (movement, line of sight, enemy behaviour).
+
+**As built:** a side-on cutaway of rooms (a graph, not a pixel grid). Each round every crew member has 2 actions; then guards
+move. Crew: Dale Brandt (Breacher: loud takedown of any guard, noise alerts the next room), Imani Reyes (Scout: sees two
+rooms, silent takedowns of unaware guards), Walt Hollis (Talker: bluffs an unaware guard for two rounds). Guards idle or patrol;
+a guard that spots you goes on alert (+10% siphon), chases, and hits on the following round. Any crew member going down fails
+the mission. Terminals add to a data-siphon meter every round until the plug is pulled; 100% fails the mission.
+Three missions: The Semi (house, free a family, one laptop), Market Street (street, courier, plans, spy drone), Vantage Tower
+(office floor, three machines and the engineers). `tests/chain.mjs` proves each is winnable and losable with random playouts.
+
+**Next:** a level editor, more guard types (camera, dog), a smart-speaker "AI" that reacts to noise, undo, a campaign map.
 
 ## The shelf (other candidates)
 | Book | Game idea | Reuses | Rights |
